@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{69963AB2-46CF-4E82-A568-05A3F5ECDCDC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Rent_a_bike</RootNamespace>
+    <AssemblyName>Rent-a-bike</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bicikli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bicikli.Designer.cs">
+      <DependentUpon>Bicikli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Istorija_iznajmljivanja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Istorija_iznajmljivanja.Designer.cs">
+      <DependentUpon>Istorija_iznajmljivanja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Iznajmljivanje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Iznajmljivanje.Designer.cs">
+      <DependentUpon>Iznajmljivanje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kvar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kvar.Designer.cs">
+      <DependentUpon>Kvar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Novi_nalog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Novi_nalog.Designer.cs">
+      <DependentUpon>Novi_nalog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Oprema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Oprema.Designer.cs">
+      <DependentUpon>Oprema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Povezivanje.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Promena_sifre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Promena_sifre.Designer.cs">
+      <DependentUpon>Promena_sifre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Roleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Roleri.Designer.cs">
+      <DependentUpon>Roleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sve.Designer.cs">
+      <DependentUpon>Sve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ulogovanje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ulogovanje.Designer.cs">
+      <DependentUpon>Ulogovanje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Welcome.Designer.cs">
+      <DependentUpon>Welcome.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Bicikli.resx">
+      <DependentUpon>Bicikli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Istorija_iznajmljivanja.resx">
+      <DependentUpon>Istorija_iznajmljivanja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Iznajmljivanje.resx">
+      <DependentUpon>Iznajmljivanje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kvar.resx">
+      <DependentUpon>Kvar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Novi_nalog.resx">
+      <DependentUpon>Novi_nalog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Oprema.resx">
+      <DependentUpon>Oprema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Promena_sifre.resx">
+      <DependentUpon>Promena_sifre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Roleri.resx">
+      <DependentUpon>Roleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sve.resx">
+      <DependentUpon>Sve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ulogovanje.resx">
+      <DependentUpon>Ulogovanje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome.resx">
+      <DependentUpon>Welcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bicycle_PNG5392.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
